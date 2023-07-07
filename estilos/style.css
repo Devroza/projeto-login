@@ -1,9 +1,58 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1;100;200;300;400;500;700;800&display=swap');
+
 /* 
     Paleta de Cores
-    Cinza: #76808c
+    Cinza mais Escuro: #76808c
+    Cinza mais Claro: #97a1ae
     Dourado: #B99d5e
     Preto Fosco: #1c1c21
 
 */
+
+* {
+    font-family: 'Ysabeau SC', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html {
+    background-color: #1c1c21;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: #97a1ae;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(218, 165, 32, 0.478);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #1c1c21 url(../imagens/pexels-pixabay-277559.jpg);
+    background-size: cover;
+    background-position: center left;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
